@@ -1,0 +1,76 @@
+/* Основные стили */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.card {
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+/* Цветовые классы */
+.text-underweight { color: #3498db; }
+.text-normal { color: #2ecc71; }
+.text-overweight { color: #e67e22; }
+.text-obese { color: #e74c3c; }
+.text-blue { color: #3498db; }
+.text-green { color: #2ecc71; }
+.text-red { color: #e74c3c; }
+
+/* Элементы интерфейса */
+.result-box {
+    transition: all 0.3s ease;
+}
+
+.progress {
+    border-radius: 10px;
+}
+
+.badge {
+    font-weight: 500;
+    padding: 5px 10px;
+    white-space: nowrap;
+}
+
+.btn {
+    transition: all 0.3s ease;
+}
+
+/* Всплывающие сообщения */
+.flash-messages {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    min-width: 300px;
+}
+
+.alert {
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+    .display-4 {
+        font-size: 2.5rem;
+    }
+
+    .result-box {
+        padding: 20px 15px !important;
+    }
+
+    .col-md-6 {
+        margin-bottom: 20px;
+    }
+}
+
+/* Специальные классы */
+.h-100
